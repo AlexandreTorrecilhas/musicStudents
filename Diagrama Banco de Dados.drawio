@@ -1,9 +1,33 @@
-<mxfile host="app.diagrams.net" modified="2024-01-13T21:23:33.498Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jOzkUjgSMNkNY3ItaFYz" version="22.1.18" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-14T01:15:46.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="2Oh-75spomlyOFPcHuCE" version="22.1.18" type="github">
   <diagram name="Página-1" id="JXGPBubFWnAtcFpSR7kk">
     <mxGraphModel dx="794" dy="492" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="YY78l0_YC_lKio6-3dk--38" value="Students" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--39" value="&lt;ul&gt;&lt;li&gt;Status&lt;/li&gt;&lt;li&gt;Name&lt;/li&gt;&lt;li&gt;Email&lt;/li&gt;&lt;li&gt;birthday&lt;br&gt;&lt;/li&gt;&lt;li&gt;genre&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="YY78l0_YC_lKio6-3dk--38">
+          <mxGeometry y="50" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--40" value="Instruments" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="40" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--41" value="&lt;ul&gt;&lt;li&gt;Instrument&lt;/li&gt;&lt;li&gt;fromChurch&lt;/li&gt;&lt;li&gt;responsible&lt;/li&gt;&lt;li&gt;family&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="YY78l0_YC_lKio6-3dk--40">
+          <mxGeometry y="50" width="280" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--42" value="instrumentFamily" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="240" width="260" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--43" value="&lt;ul&gt;&lt;li&gt;family&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="YY78l0_YC_lKio6-3dk--42">
+          <mxGeometry y="50" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--44" value="parents" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YY78l0_YC_lKio6-3dk--45" value="&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Status&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Name&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Email&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;birthday&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;genre&lt;/li&gt;&lt;/ul&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="YY78l0_YC_lKio6-3dk--44">
+          <mxGeometry y="50" width="280" height="110" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
