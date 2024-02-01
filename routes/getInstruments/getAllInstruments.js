@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 connectToMongoDB().catch((error) => {
-    console.log("Connection failed: ". error);
+    console.log("Connection failed: ", error);
     process.exit(1)
 });
 
