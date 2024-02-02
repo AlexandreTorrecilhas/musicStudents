@@ -1,13 +1,13 @@
 const {connectToMongoDB, getDB} = require ('../../dbConnection/connectionFile.js');
 const express = require('express');
-const app = express();
+const routes = express.Router();
 
 connectToMongoDB().catch((error) =>{
     console.log("Connection falied: ", error)
     process.exit(1);
 })
 
-app.get('/instrumentFamily', async (req, res) => {
+routes.get('/instrumentFamily', async (req, res) => {
     try {
         const db = getDB();
         const document = await db.collection("instrumentFamily").find().toArray();
@@ -18,6 +18,4 @@ app.get('/instrumentFamily', async (req, res) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("Running on port 3000")
-})
+module.exports = routes;

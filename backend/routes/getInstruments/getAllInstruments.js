@@ -1,15 +1,13 @@
 const {connectToMongoDB,getDB} = require('../../dbConnection/connectionFile');
 const express = require('express');
-const app = express();
-
-const defaultDoor = 3000;
+const routes = express.Router();
 
 connectToMongoDB().catch((error) => {
     console.log("Connection failed: ", error);
     process.exit(1)
 });
 
-app.get('/instruments', async (req, res) => {
+routes.get('/instruments', async (req, res) => {
     try {
         const db = getDB();
         const document = await db.collection("instrument").find().toArray();
@@ -20,6 +18,4 @@ app.get('/instruments', async (req, res) => {
     }
 })
 
-app.listen(defaultDoor, ()=> {
-    console.log(`Runing on port ${defaultDoor}`)
-})
+module.exports = routes;
