@@ -1,6 +1,10 @@
+const dotenv = require('dotenv');
+const dotenvPath = '../.env.test';
+dotenv.config({path: dotenvPath});
+
 const {MongoClient} = require('mongodb');
 
-const uri = 'mongodb://localhost:27017/musicStudents';
+const uri = process.env.CONNECTIONURI;
 
 const client = new MongoClient(uri);
 

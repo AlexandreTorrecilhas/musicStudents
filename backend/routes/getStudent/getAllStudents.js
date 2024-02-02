@@ -1,3 +1,7 @@
+const dotenv = require('dotenv');
+const dotenvPath = "../../.env.test";
+dotenv.config({path: dotenvPath})
+
 const {connectToMongoDB, getDB} = require('../../dbConnection/connectionFile')
 const express = require('express');
 const app = express();
@@ -18,6 +22,6 @@ app.get('/musicStudents', async (req,res) => {
     }
 })
 
-app.listen(3000, ()=>{
-    console.log("Running on port 3000")
+app.listen(process.env.PORT, ()=>{
+    console.log('Runing or port', process.env.PORT)
 })
