@@ -4,14 +4,14 @@ dotenv.config({path: dotenvPath})
 
 const {connectToMongoDB, getDB} = require('../../dbConnection/connectionFile')
 const express = require('express');
-const app = express();
+const router = express.Router();
 
 connectToMongoDB().catch((error) => {
     console.log("Failed: ", error)
     process.exit(1)
 })
 
-app.get('/musicStudents', async (req,res) => {
+router.get('/musicStudents', async (req,res) => {
     try {
         const db = getDB();
         const document = await db.collection("musicStudents").find().toArray();
@@ -22,6 +22,4 @@ app.get('/musicStudents', async (req,res) => {
     }
 })
 
-app.listen(process.env.PORT, ()=>{
-    console.log('Runing or port', process.env.PORT)
-})
+module.exports = router;
