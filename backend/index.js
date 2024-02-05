@@ -12,6 +12,8 @@ const getAllFamily = require('./routes/getFamily/getAllFamily');
 const getAllInstruments = require("./routes/getInstruments/getAllInstruments");
 const getAllParents = require('./routes/getParents/getAllParents')
 
+
+
 //Routes
 app.use('/index', getAllStudents, getAllFamily, getAllInstruments, getAllParents);
 
